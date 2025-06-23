@@ -1,0 +1,9 @@
+<app-template-event-form-component 
+  [form]="eventForm" [mode]="mode" (formChange)="saveForm()" (closeDialog)="closeDialog()">
+  <ng-template let-form="form">
+    <div class="p-field" [formGroup]="form">
+      <label for="genre">Жанр музыки:</label>
+      <p-select [options]="musicGenreOptions" formControlName="genre" placeholder="Выберите жанр" />
+    </div>
+  </ng-template>
+</app-template-event-form-component>

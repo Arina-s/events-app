@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { EventsList } from "./components/events-list/events-list";
+import { ToolbarModule } from 'primeng/toolbar';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [EventsList, ToolbarModule],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
-export class App {
-  protected title = 'events-app';
-}
+export class App {}

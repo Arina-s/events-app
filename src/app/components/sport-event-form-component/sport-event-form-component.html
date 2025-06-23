@@ -1,0 +1,11 @@
+<app-template-event-form-component 
+  [form]="eventForm" [mode]="mode" (formChange)="saveForm()" (closeDialog)="closeDialog()">
+  <ng-template let-form="form">
+    <div class="p-field" [formGroup]="form">
+      <label>Кол-во участников</label>
+      <p-inputnumber formControlName="participantsCount" />
+    </div>
+  </ng-template>
+</app-template-event-form-component>
+
+

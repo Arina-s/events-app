@@ -1,0 +1,12 @@
+<div class="choose-type-event-container">
+    <h2>Выберите тип мероприятия</h2>
+
+    <p-select [(ngModel)]="selectedEventType" [options]="eventTypeOptions" placeholder="Выберите тип">
+    </p-select>
+
+    <div class="button-container">
+        <p-button label="Отмена" (click)="closeDialog()" severity="secondary"></p-button>
+        <p-button label="Дальше" (click)="openAddEventDialog()" [disabled]="!selectedEventType()" severity="info">
+        </p-button>
+    </div>
+</div>

@@ -39,7 +39,11 @@ ng serve
 
 ### Создание нового мероприятия
 
-![Создание мероприятия](./public/screenshots/event-create-dialog.png)
+#### Шаг 1.
+![Создание мероприятия](./public/screenshots/event-create-dialog-1.png)
+
+#### Шаг 2.
+![Создание мероприятия](./public/screenshots/event-create-dialog-2.png)
 
 ### Диалог удаления
 

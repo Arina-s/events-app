@@ -1,5 +1,5 @@
-import { MusicEventFormComponent } from "../components/music-event-form-component/music-event-form-component";
-import { SportEventFormComponent } from "../components/sport-event-form-component/sport-event-form-component";
+import { MusicEventFormComponent } from '../components/music-event-form-component/music-event-form-component';
+import { SportEventFormComponent } from '../components/sport-event-form-component/sport-event-form-component';
 
 export interface BaseEvent {
   id: number;

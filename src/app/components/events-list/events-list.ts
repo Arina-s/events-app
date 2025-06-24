@@ -1,6 +1,6 @@
-import { Component, inject, Signal } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { EventDataService } from '../../services/event-data-service';
-import { DatePipe, NgIf } from '@angular/common';
+import { DatePipe } from '@angular/common';
 import { EVENT_TYPE_LABELS, EventType } from '../../models/event.model';
 import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';

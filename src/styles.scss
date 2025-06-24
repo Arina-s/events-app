@@ -1,4 +1,4 @@
-@import "primeicons/primeicons.css";
+@import 'primeicons/primeicons.css';
 
 html,
 body {
@@ -12,7 +12,6 @@ body {
 
 .p-field {
     display: flex;
-
     flex-direction: column;
     gap: 4px;
 }

@@ -31,20 +31,20 @@ export abstract class BaseEventFormComponent implements OnInit{
       description: this.formBuilder.control(this.event?.description || ''),
       location: this.formBuilder.control(this.event?.location || ''),
       date: this.formBuilder.control(this.event?.date || new Date())
-    })
+    });
   }
 
   saveForm() {
     switch (this.mode) {
       case 'create': {
-        this.eventDataService.addEvent(this.eventForm.value); 
+        this.eventDataService.addEvent(this.eventForm.value);
         break;
       }
       case 'edit': {
-        this.eventDataService.updateEvent(this.eventForm.value); 
+        this.eventDataService.updateEvent(this.eventForm.value);
         break;
       }
-    };
+    }
     this.dialogRef.close();
   }
 
@@ -53,4 +53,3 @@ export abstract class BaseEventFormComponent implements OnInit{
   }
 
 }
-

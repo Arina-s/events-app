@@ -14,7 +14,7 @@ export class DeleteConfirmationDialogComponent {
   private eventDataService = inject(EventDataService);
   private dialogRef = inject(MatDialogRef<DeleteConfirmationDialogComponent>);
   private data = inject(MAT_DIALOG_DATA) as { eventId: number };
-  
+
   confirmDelete() {
     this.eventDataService.deleteEvent(this.data.eventId);
     this.closeDialog();

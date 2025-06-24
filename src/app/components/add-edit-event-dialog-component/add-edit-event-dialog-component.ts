@@ -31,8 +31,9 @@ export class AddEditEventDialogComponent implements OnInit{
         break;
       }
     }
-    this.componentsInputs = { 
-      mode: this.mode, 
+
+    this.componentsInputs = {
+      mode: this.mode,
       event: this.event,
       dialogRef: this.dialogRef
     };
